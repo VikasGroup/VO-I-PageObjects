@@ -16,6 +16,8 @@ public class loginPgObject extends BasicPgObject {
 		super(driver);
 	}
 	WebElement currentVirtualOffice=driver.findElement(By.xpath(".//*[@id='form1']/div[3]/div/div[1]/div[1]/a[1]"));
+
+	
 	public void clickCurrentVirtualOffice(){
 		currentVirtualOffice.click();
 	}
