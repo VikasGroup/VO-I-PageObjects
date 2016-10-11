@@ -11,8 +11,8 @@ import com.titanium.core.Driver;
 
 
 
-public class loginPgObject extends BasicPgObject {
-	public loginPgObject(Driver driver){
+public class LoginPgObject extends BasicPgObject {
+	public LoginPgObject(Driver driver){
 		super(driver);
 	}
 	WebElement currentVirtualOffice=driver.findElement(By.xpath(".//*[@id='form1']/div[3]/div/div[1]/div[1]/a[1]"));
