@@ -10,8 +10,8 @@ import com.titanium.core.Driver;
 
 
 
-public class qntestPgObject extends BasicPgObject {
-	public qntestPgObject(Driver driver){
+public class QntestPgObject extends BasicPgObject {
+	public QntestPgObject(Driver driver){
 		super(driver);
 	}
 	WebElement irlogin=driver.findElement(By.xpath(".//*[@id='ctl00_SharedHeaderStyleTopMenuBarNew_hlLogin']"));
