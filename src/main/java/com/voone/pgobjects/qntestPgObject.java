@@ -1,13 +1,17 @@
-package com.pgObjects;
+package com.voone.pgobjects;
+
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.titanium.BasicPageObject;
+import com.titanium.core.BasicPgObject;
+import com.titanium.core.Driver;
 
-public class qntestPgObject extends BasicPageObject {
-	public qntestPgObject(WebDriver driver){
+
+
+public class qntestPgObject extends BasicPgObject {
+	public qntestPgObject(Driver driver){
 		super(driver);
 	}
 	WebElement irlogin=driver.findElement(By.xpath(".//*[@id='ctl00_SharedHeaderStyleTopMenuBarNew_hlLogin']"));

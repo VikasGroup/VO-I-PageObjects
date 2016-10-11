@@ -1,13 +1,17 @@
-package com.pgObjects;
+package com.voone.pgobjects;
+
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.titanium.BasicPageObject;
+import com.titanium.core.BasicPgObject;
+import com.titanium.core.Driver;
 
-public class Online_Login_VOPgObject extends BasicPageObject {
-	public Online_Login_VOPgObject(WebDriver driver){
+
+
+public class Online_Login_VOPgObject extends BasicPgObject {
+	public Online_Login_VOPgObject(Driver driver){
 		super(driver);
 	}
 	WebElement shopnowdirectly=driver.findElement(By.xpath(".//*[@id='ContentPlaceHolder1_chkRedirectToEStore']"));

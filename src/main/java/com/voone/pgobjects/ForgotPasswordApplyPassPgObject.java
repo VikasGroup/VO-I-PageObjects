@@ -1,13 +1,16 @@
-package com.pgObjects;
+package com.voone.pgobjects;
+
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.titanium.BasicPageObject;
+import com.titanium.core.BasicPgObject;
+import com.titanium.core.Driver;
 
-public class ForgotPasswordApplyPassPgObject extends BasicPageObject{
-	public ForgotPasswordApplyPassPgObject(WebDriver driver){
+
+public class ForgotPasswordApplyPassPgObject extends BasicPgObject{
+	public ForgotPasswordApplyPassPgObject(Driver driver){
 		super(driver);
 	}
 	WebElement email=driver.findElement(By.xpath(".//*[@id='rblVerifyLink_0']"));
