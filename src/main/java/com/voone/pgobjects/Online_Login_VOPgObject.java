@@ -35,7 +35,7 @@ public class Online_Login_VOPgObject extends BasicPgObject {
 		password.sendKeys(value);
 	}
 	public void selectLanguage(String value){
-		language.selectByVisibleText(value);
+		language.selectByValue(value);
 	}
 	public void clickForgotPass(){
 		forgotpass.click();
