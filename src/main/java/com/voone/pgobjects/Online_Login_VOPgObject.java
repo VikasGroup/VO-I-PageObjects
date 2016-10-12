@@ -19,6 +19,7 @@ public class Online_Login_VOPgObject extends BasicPgObject {
 	WebElement password=driver.findElement(By.xpath(".//*[@id='ContentPlaceHolder1_txtPassword']"));
 	Select language=new Select(driver.findElement(By.xpath(".//*[@id='ContentPlaceHolder1_LanguageSelector2_ddlLanguage']")));
 	WebElement forgotpass=driver.findElement(By.xpath(".//*[@id='ContentPlaceHolder1_forgotPwd2_LinkButton1']"));
+	WebElement loginbtn=driver.findElement(By.xpath(".//*[@id='ContentPlaceHolder1_btnLogin']"));
 	
 	public void clickShopNowDirectly(){
 		shopnowdirectly.click();
@@ -30,9 +31,12 @@ public class Online_Login_VOPgObject extends BasicPgObject {
 		password.sendKeys(value);
 	}
 	public void selectLanguage(String value){
-		language.selectByVisibleText(value);
+		language.selectByValue(value);
 	}
 	public void clickForgotPass(){
 		forgotpass.click();
+	}
+	public void clickLogInBtn(){
+		loginbtn.click();
 	}
 }
