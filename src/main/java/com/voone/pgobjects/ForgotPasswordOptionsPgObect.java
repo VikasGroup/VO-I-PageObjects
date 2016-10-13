@@ -14,7 +14,7 @@ public class ForgotPasswordOptionsPgObect extends BasicPgObject{
 	public ForgotPasswordOptionsPgObect(Driver driver){
 		super(driver);
 	}
-	WebElement link=driver.findElement(By.xpath(".//*[@id='rblVerifyLink_0']"));
+	WebElement link=driver.findElement(By.name("rblVerifyLink"));
 	WebElement email=driver.findElement(By.xpath(".//*[@id='btnsubmit']"));
 	WebElement continuebtn=driver.findElement(By.xpath(".//*[@id='btnContinue']"));
 	public void clickSendVerifyLink(){
